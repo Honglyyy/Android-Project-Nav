@@ -8,6 +8,7 @@ android {
         version = release(36)
     }
 
+
     defaultConfig {
         applicationId = "com.example.lmsnavproject"
         minSdk = 30
@@ -31,6 +32,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -42,4 +46,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.google.android.material:material:1.11.0")
+    implementation("androidx.drawerlayout:drawerlayout:1.2.0")
 }
