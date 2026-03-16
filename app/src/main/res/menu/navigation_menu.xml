@@ -32,5 +32,6 @@
     <item
         android:id="@+id/navLogOut"
         android:title="Log Out"
-        android:icon="@drawable/logout_24dp"/>
+        android:icon="@drawable/logout_24dp"
+        />
 </menu>
