@@ -5,5 +5,5 @@
     <color name="yellow">#FFCA28</color>
     <color name="gray">#B7B3AA</color>
     <color name="bgCard">#509CE4</color>
-
+    <color name="bootstrapPrimary">#0d6efd</color>
 </resources>

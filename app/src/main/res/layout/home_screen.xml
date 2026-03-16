@@ -1,105 +1,295 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingHorizontal="10dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Courses"
-        android:textStyle="bold"
-        android:textSize="24sp"/>
-
-    <View
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/gray"
-        android:layout_marginTop="8dp"/>
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
 
-    <!-- Horizontal Slider -->
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:scrollbars="none">
-
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:text="SkillSphere"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
 
-            <Button
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Horizontal Slider -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="All"
-                android:textSize="12sp"
-                android:backgroundTint="?attr/colorPrimary"
-                android:textColor="?attr/colorOnPrimary"
-                android:layout_marginRight="5dp"/>
+                android:orientation="horizontal">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Advertising"
-                android:textSize="12sp"
-                android:backgroundTint="?attr/colorSurfaceVariant"
-                android:textColor="?attr/colorOnSurface"
-                android:layout_marginRight="5dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textSize="12sp"
+                    android:backgroundTint="?attr/colorPrimary"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:layout_marginRight="5dp"/>
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advertising"
+                    android:textSize="12sp"
+                    android:backgroundTint="?attr/colorSurfaceVariant"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginRight="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Design"
+                    android:textSize="12sp"
+                    android:backgroundTint="?attr/colorSurfaceVariant"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginRight="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marketing"
+                    android:textSize="12sp"
+                    android:backgroundTint="?attr/colorSurfaceVariant"
+                    android:textColor="?attr/colorOnSurface"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="15dp">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Design"
-                android:textSize="12sp"
-                android:backgroundTint="?attr/colorSurfaceVariant"
-                android:textColor="?attr/colorOnSurface"
-                android:layout_marginRight="5dp"/>
-
-            <Button
+                android:textColor="?attr/colorOnPrimary"
+                android:paddingHorizontal="35dp"
+                />
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Marketing"
-                android:textSize="12sp"
-                android:backgroundTint="?attr/colorSurfaceVariant"
-                android:textColor="?attr/colorOnSurface"/>
-
+                android:text="UX AS ART"
+                android:textSize="22dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Master the principles of user experience through a creative , human centered lens."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
         </LinearLayout>
-    </HorizontalScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/card_background"
-        android:orientation="vertical"
-        android:paddingVertical="20dp"
-        android:paddingHorizontal="20dp"
-        android:layout_marginTop="15dp">
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Design"
-            android:textColor="?attr/colorOnPrimary"
-            android:paddingHorizontal="35dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UX AS ART"
-            android:textSize="22dp"
-            android:layout_marginTop="15dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Master the principles of user experience through a creative , human centered lens."
-            android:textSize="20sp"
-            android:textStyle="bold"
             android:layout_marginTop="10dp"
-            android:textColor="@color/black"/>
-    </LinearLayout>
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recommended Courses"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
-</LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="view all lessons"
+                    android:layout_weight="0.25"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_card_background"
+                android:padding="5dp"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/springboot"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spring Boot"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/colorOnSurface"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Lesson"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/bootstrapPrimary"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_card_background"
+                android:padding="5dp"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ktor"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ktor"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/colorOnSurface"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Lesson"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/bootstrapPrimary"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Newly Added Courses"
+                android:layout_weight="0.75"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_card_background"
+                android:padding="5dp"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/asp"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASP .NET CORE MVC"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/colorOnSurface"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Lesson"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/bootstrapPrimary"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lesson_card_background"
+                android:padding="5dp"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/laravel"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    app:strokeColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laravel"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:textColor="?attr/colorOnSurface"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Lesson"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:backgroundTint="@color/bootstrapPrimary"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
