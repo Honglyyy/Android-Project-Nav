@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.lmsnavproject.databinding.ActivityMainBinding
-
+import android.view.WindowManager
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -16,6 +16,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -28,7 +34,6 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
 
-        // Instantiate ActionBarDrawerToggle
         toggle = ActionBarDrawerToggle(
             this,
             binding.drawerLayout,
@@ -37,7 +42,6 @@ class MainActivity : AppCompatActivity() {
             R.string.close_drawer
         )
 
-        // Add listener
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
     }
