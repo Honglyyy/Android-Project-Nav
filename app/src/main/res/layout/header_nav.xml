@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_picture"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:strokeColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mr.booker"
+        android:textSize="22sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="booker@gmail.com"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+</LinearLayout>
