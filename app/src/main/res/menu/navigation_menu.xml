@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-
-
+<menu xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navHome"
         android:title="Home"
         android:icon="@drawable/home_24dp"
         />
-
     <item
         android:id="@+id/navMyAccount"
         android:title="My Account"
         android:icon="@drawable/account_circle_24dp"/>
-
     <item
         android:id="@+id/navMyCourse"
         android:title="My Course"
         android:icon="@drawable/course_24dp"/>
-
     <item
         android:id="@+id/navRecentCourse"
         android:title="Recent Course"
         android:icon="@drawable/recent_cours_24dp"/>
-
     <item
         android:id="@+id/navFavorite"
         android:title="Favorite"
         android:icon="@drawable/star_24dp"/>
-
     <item
         android:id="@+id/navLogOut"
         android:title="Log Out"
         android:icon="@drawable/logout_24dp"
         />
 </menu>
+

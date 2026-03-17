@@ -15,15 +15,18 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--Toolbar-->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             />
 
+        <!--Content on the home screen-->
        <include layout="@layout/home_screen"/>
     </LinearLayout>
 
+    <!--Navigation menus-->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navView"
         android:layout_width="wrap_content"
@@ -33,3 +36,4 @@
         app:headerLayout="@layout/header_nav"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
